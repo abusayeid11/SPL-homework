@@ -18,7 +18,7 @@ int main()
     for(i=0;i<5;i++){
         temp = temp + (sum-cricketer1.score[i])*(sum-cricketer1.score[i]);
     }
-    temp = sqrt(temp/2);
+    temp = sqrt(temp/4);
     scanf("%s",cricketer2.name);
     sum = 0;
     double temp2=0;
@@ -30,7 +30,7 @@ int main()
     for(i=0;i<5;i++){
         temp2 = temp2 + (sum-cricketer2.score[i])*(sum-cricketer2.score[i]);
     }
-    temp2 = sqrt(temp2/2);
+    temp2 = sqrt(temp2/4);
     if(temp>temp2){
         printf("More consistant player is %s",cricketer2.name);
     }
